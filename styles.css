@@ -1,0 +1,172 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0e0e0e;
+    color: #f0f0f0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1.brillante {
+    font-size: 2.8rem;
+    color: #fff;
+    text-shadow: 0 0 8px #ff0000, 0 0 16px #ff4d4d;
+    margin-bottom: 20px;
+}
+
+.rojo {
+    color: #ff0000;
+}
+
+.yape {
+    color: #ff4d4d;
+    font-weight: bold;
+    text-shadow: 0 0 8px #ff4d4d, 0 0 16px #ff6666;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.recuadro {
+    background-color: #1a1a1a;
+    border: 2px solid #ff0000;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 950px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px #ff000033;
+}
+
+p.reglas {
+    font-size: 1.4rem;
+    color: #ff4d4d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.regla {
+    margin-bottom: 30px;
+}
+
+.imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.imagen {
+    width: 160px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ff4d4d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #ff000066;
+}
+
+.imagen:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ff0000, 0 0 35px #ff4d4d;
+}
+
+.imagen-con-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen-con-texto p {
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+main {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Sección de info sin brillo */
+.info-adicional {
+    margin-top: 40px;
+    color: white;
+    max-width: 800px;
+    margin-inline: auto;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.btn-wsp {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-wsp:hover {
+    background-color: #1ebe57;
+}
+
+/* Texto brillante para reglas */
+.texto-brillante {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ff4d4d;
+    animation: textGlow 1.6s infinite alternate;
+}
+
+@keyframes textGlow {
+    from {
+        text-shadow: 0 0 5px #ff1a1a, 0 0 10px #ff4d4d, 0 0 15px #ff8080;
+    }
+    to {
+        text-shadow: 0 0 15px #ff1a1a, 0 0 25px #ff4d4d, 0 0 35px #ffcccc;
+    }
+}
+
+/* Imagen en pie centrada */
+.grupo-img-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.grupo-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #ff0000;
+}
+
+.texto-apuesta {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #777;
+}
